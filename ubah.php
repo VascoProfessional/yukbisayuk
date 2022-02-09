@@ -18,7 +18,7 @@ if (!isset($_GET['id'])) {
 $id = $_GET['id'];
 
 // query mahasiswa berdasarkan id
-$m = query("SELECT * FROM mahasiswa WHERE id = $id");
+$m = queryindex("SELECT * FROM mahasiswa WHERE id = $id");
 
 // cek apakah tombol ubah sudah di tekan
 if (isset($_POST['ubah'])) {
