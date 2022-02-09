@@ -189,7 +189,7 @@ function login($data)
   $password = htmlspecialchars($data['password']);
 
   // cek username
-  if ($user = query("SELECT * FROM user WHERE username = '$username'")) {
+  if ($user = queryindex("SELECT * FROM user WHERE username = '$username'")) {
     // cek password
     if (password_verify($password, $user['password'])) {
        // set session
