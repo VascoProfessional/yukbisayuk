@@ -2,7 +2,7 @@
 
 function koneksi()
 {
-  return mysqli_connect('localhost', 'root', '', 'latihanweb');
+  return mysqli_connect('sql6.freemysqlhosting.net', 'sql6470572', 'KhnV49M6aR', 'sql6470572');
 }
 
 function query($query)
